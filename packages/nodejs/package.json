@@ -6,6 +6,10 @@
   "scripts": {
     "dev1": "npx babel-node --inspect ./src/index.js",
     "debug": "npx babel-node --inspect-brk ./src/index.js",
+    "express:dev": "npx babel-node --inspect express/server.js",
+    "express:serve": "node express/server.js",
+    "koa:dev": "npx babel-node --inspect koa/server.js",
+    "koa:serve": "node koa/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +26,10 @@
     "url": "https://github.com/deepjs-net/debugging/issues"
   },
   "homepage": "https://github.com/deepjs-net/debugging#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "koa": "^2.8.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
