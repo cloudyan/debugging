@@ -1,0 +1,15 @@
+{
+  "name": "@deepjs/ts-debugging",
+  "version": "1.0.0",
+  "description": "ts-debugging",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev:ts": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts-debugging"
+  ],
+  "author": "cloudyan",
+  "license": "MIT"
+}
