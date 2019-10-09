@@ -21,6 +21,8 @@
 
 这时可以使用 `--nolazy --inspect-brk` 之后打开 `chrome://inspect` 即可调试，但是此时调试，devtools 面板没有文件列表，不好定位执行文件
 
+`--inspect-brk` 会在用户代码启动之前中断。[--inspect-brk 和 --inspect 的区别](https://nodejs.org/en/docs/guides/debugging-getting-started/#command-line-options)
+
 以上方法针对 express 和 koa 也是可行的，脚本运行起来并不会退出，可以打开 `chrome://inspect` 打开调试界面
 
 ## 使用 vscode 调试

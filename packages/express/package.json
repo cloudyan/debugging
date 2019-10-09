@@ -1,0 +1,19 @@
+{
+  "name": "@deepjs/express-debugging",
+  "version": "1.0.0",
+  "description": "express-debugging",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "npx babel-node --inspect src/server.js",
+    "serve": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express-debugging"
+  ],
+  "author": "cloudyan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

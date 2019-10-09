@@ -2,16 +2,22 @@
 
 这里收集总结各种调试的手段
 
-- [x] 调试 c/cpp
+- browser 浏览器
+  - [ ] chrome
+  - [ ] firefox
+  - [ ] safari
 - nodejs
-  - [x] 调试 nodejs 脚本
-  - [x] 调试 express/koa
-  - [ ] 调试 typescript
-  - [ ] 调试 webpack
-- [ ] 调试 vue
-- [ ] 调试 react
+  - [x] nodejs 脚本
+  - [x] express/koa
+  - [x] webpack 插件
+  - [ ] babel 插件
+  - [ ] typescript
+- [ ] vue
+- [ ] react
+- [x] c/cpp
 
 参考：
 
 - https://github.com/Microsoft/vscode-recipes
 - https://github.com/katopz/vscode-debug-nodejs-es6
+- https://juejin.im/post/5c6b6defe51d45798b51e4b2
