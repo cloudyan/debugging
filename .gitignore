@@ -64,6 +64,7 @@ typings/
 ipch
 temp*
 *.out*
+dist
 
 # temp
 temp

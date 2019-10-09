@@ -22,6 +22,31 @@
       "request": "launch",
       "name": "启动程序",
       "program": "${file}"
-    }
+    },
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "Launch via NPM",
+    //   "runtimeExecutable": "npm",
+    //   "runtimeArgs": [
+    //     "run-script",
+    //     "debug"
+    //   ],
+    //   "port": 9229
+    // },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "webpack:plugin",
+      "program": "${workspaceFolder}/node_modules/webpack/bin/webpack.js",
+      // "program": "${workspaceFolder}/node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+      "args": [
+        // 默认为 `./webpack.config.js`
+        // "--host", "0.0.0.0",
+        "--config", "./packages/webpack/build/webpack.config.js"
+      ],
+      "env" : { "NODE_ENV" : "production" },
+      // "envFile": "${workspaceFolder}/xxx.env",
+    },
   ]
 }

@@ -9,6 +9,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev1": "npx babel-node --inspect ./packages/nodejs/src/index.js",
+    "lint": "eslint './src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,5 +30,17 @@
   "bugs": {
     "url": "https://github.com/deepjs-net/debugging/issues"
   },
-  "homepage": "https://github.com/deepjs-net/debugging#readme"
+  "homepage": "https://github.com/deepjs-net/debugging#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "webpack-cli": "^3.3.9"
+  }
 }

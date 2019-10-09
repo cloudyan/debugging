@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev1": "npx babel-node --inspect ./src/index.js",
+    "debug": "npx babel-node --inspect-brk ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,0 +1,20 @@
+{
+  "name": "@deepjs/webpack-debugging",
+  "version": "1.0.0",
+  "description": "webpack-debugging",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config ./build/webpack.config.js",
+    "debug": "node --nolazy --inspect-brk=9229 ./node_modules/webpack/bin/webpack.js --mode development --watch --config ./build/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack-debugging"
+  ],
+  "author": "cloudyan",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}

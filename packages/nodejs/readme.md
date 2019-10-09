@@ -17,8 +17,10 @@
 
 执行 `npm run dev1`
 
-这个是小脚本，而一旦执行，就执行完退出了，没触发时机打断点，TODO: 待解决
+如果是小脚本，使用 `--inspect` 一旦执行，就会执行完退出，没触发时机打断点
 
-这种方法目前针对 express 和 koa 是可行的，脚本运行起来并不会退出，可以打开 `chrome://inspect` 打开调试界面
+这时可以使用 `--nolazy --inspect-brk` 之后打开 `chrome://inspect` 即可调试，但是此时调试，devtools 面板没有文件列表，不好定位执行文件
+
+以上方法针对 express 和 koa 也是可行的，脚本运行起来并不会退出，可以打开 `chrome://inspect` 打开调试界面
 
 ## 使用 vscode 调试
