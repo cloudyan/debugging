@@ -1,0 +1,29 @@
+{
+  "name": "@deepjs/nodejs-debugging",
+  "version": "1.0.0",
+  "description": "这里收集总结各种调试手段",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev1": "npx babel-node --inspect ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepjs-net/debugging.git"
+  },
+  "keywords": [
+    "debug",
+    "debugging"
+  ],
+  "author": "cloudyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deepjs-net/debugging/issues"
+  },
+  "homepage": "https://github.com/deepjs-net/debugging#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "lerna": "^3.16.5"
+  }
+}
