@@ -9,9 +9,10 @@
 - nodejs
   - [x] nodejs 脚本
   - [x] express/koa
-  - [x] webpack 插件
-  - [ ] babel 插件
   - [ ] typescript
+  - [x] webpack plugin
+  - [ ] babel plugin
+  - [ ] vue-cli plugin
 - [ ] vue
 - [ ] react
 - [x] c/cpp
