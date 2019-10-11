@@ -1,8 +1,15 @@
 // https://webpack.docschina.org/contribute/plugin-patterns/
 
 class MyPlugin {
+  constructor(options) {
+    this.options = options
+    this.externalModules = {}
+  }
+
   /* eslint class-methods-use-this: 0 */
   apply(compiler) {
+    // tap
+    // tapAsync
     compiler.hooks.emit.tapAsync('MyPlugin', (compilation, callback) => {
       // 检索每个（构建输出的）chunk：
       compilation.chunks && compilation.chunks.forEach(chunk => {
@@ -23,6 +30,26 @@ class MyPlugin {
       })
 
       callback()
+    })
+
+
+    const reg = /("([^\\\"]*(\\.)?)*")|('([^\\\']*(\\.)?)*')|(\/{2,}.*?(\r|\n))|(\/\*(\n|.)*?\*\/)|(\/\*\*\*\*\*\*\/)/g
+    compiler.hooks.emit.tap('CodeBeautify', (compilation)=> {
+      Object.keys(compilation.assets).forEach((data)=> {
+        let content = compilation.assets[data].source() // 欲处理的文本
+        content = content.replace(reg, function (word) { // 去除注释后的文本
+          return /^\/{2,}/.test(word) || /^\/\*!/.test(word) || /^\/\*{3,}\//.test(word) ? "" : word
+        })
+        console.log('删除所有注释')
+        compilation.assets[data] = {
+          source(){
+            return content
+          },
+          size(){
+            return content.length
+          }
+        }
+      })
     })
   }
 }

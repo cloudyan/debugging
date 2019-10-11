@@ -14,7 +14,9 @@ class AA {
 }
 
 module.exports = {
-  mode: 'production',
+  // mode: 'development',
+  mode: 'production', // 默认就删除注释
+  devtool: 'source-map',
   context: path.resolve(__dirname, './'),
   entry: '../src/main.js',
   output: {

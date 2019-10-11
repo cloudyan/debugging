@@ -7,6 +7,7 @@ sleep(3000).then(() => {
   console.log('after sleep')
 })
 
+// 测试注释
 console.log('main.js')
 
 const version = new Version('3.4.0')
