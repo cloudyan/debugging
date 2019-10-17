@@ -10,6 +10,7 @@
   - [x] nodejs 脚本
   - [x] express/koa
   - [ ] typescript
+  - [ ] jest
   - [x] webpack plugin
   - [ ] babel plugin
   - [ ] vue-cli plugin

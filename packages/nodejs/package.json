@@ -4,7 +4,7 @@
   "description": "这里收集总结各种调试手段",
   "main": "dist/index.js",
   "scripts": {
-    "dev1": "npx babel-node --inspect ./src/index.js",
+    "dev": "npx babel-node --inspect ./src/index.js",
     "debug": "npx babel-node --inspect-brk ./src/index.js",
     "express:dev": "npx babel-node --inspect express/server.js",
     "express:serve": "node express/server.js",
@@ -28,11 +28,11 @@
   "homepage": "https://github.com/deepjs-net/debugging#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "koa": "^2.8.2"
+    "koa": "^2.10.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.3",
+    "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
-    "lerna": "^3.16.5"
+    "lerna": "^3.18.1"
   }
 }

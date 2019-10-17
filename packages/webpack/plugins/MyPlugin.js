@@ -37,7 +37,8 @@ class MyPlugin {
     compiler.hooks.emit.tap('CodeBeautify', (compilation)=> {
       Object.keys(compilation.assets).forEach((data)=> {
         let content = compilation.assets[data].source() // 欲处理的文本
-        content = content.replace(reg, function (word) { // 去除注释后的文本
+        content = content.replace(reg, function (word) {
+          // 去除注释后的文本
           return /^\/{2,}/.test(word) || /^\/\*!/.test(word) || /^\/\*{3,}\//.test(word) ? "" : word
         })
         console.log('删除所有注释')

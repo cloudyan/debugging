@@ -3,16 +3,26 @@
   // for the documentation about the tasks.json format
   "version": "2.0.0",
   "tasks": [
+    // 需要一个通用的清除 dist 目录的 task
+    // {
+    //   "label": "clean:dist",
+    //   "type": "shell",
+    //   "command": "rm",
+    //   "args": [
+    //     "-r",
+    //     "dist"
+    //   ],
+    // },
     {
       "label": "cpp:build", // 任务的名字叫 cpp:build，注意是大小写区分的，等会在launch中调用这个名字
       "type": "shell",
       // "command": "gcc",
       "command": "g++", // g++ xxx.cpp -o a.out
       "args": [
-          "-g", // 调试程序必须设置的参数
-          "-o", // 输出名称，不进行编译优化
-          "./packages/cpp/a.out",
-          "./packages/cpp/main.cpp" // 编译文件
+        "-g", // 调试程序必须设置的参数
+        "-o", // 输出名称，不进行编译优化
+        "./packages/cpp/a.out",
+        "./packages/cpp/main.cpp" // 编译文件
       ],
       // 所以以上部分，就是在shell中执行
       "group": {

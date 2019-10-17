@@ -34,3 +34,15 @@
   ]
 }
 ```
+
+## webpack 命令行参数
+
+- --progress: 能够看到打包进度
+- --json: 可以将打包结果输出为 json
+- --display-chunks: 可以看到打包出来的 chunk 信息
+
+[更多命令行参数](https://webpack.js.org/api/cli/)
+
+还可以通过 analyse 网站分析 webpack 的编译结果，可以分析 chunks, modules, Assets 等。
+
+https://webpack.github.io/analyse/
