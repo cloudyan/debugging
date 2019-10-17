@@ -1,0 +1,22 @@
+{
+  "name": "@deepjs/jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --inspect-brk ./node_modules/.bin/jest --runInBand ./__tests__/SyncHook.js",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "__tests__[\\\\/].+\\.js$": "babel-jest"
+    }
+  },
+  "author": "cloudyan",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "tapable": "^1.1.3"
+  }
+}
