@@ -53,24 +53,34 @@ sudo make install
 
 详细参见官方文档地址
 
-建议使用 [RemoteDebug/remotedebug-ios-webkit-adapter](https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter)
+1. ios safari 设置： 设置 -> Safari浏览器 -> 高级 -> Web Inspector
+2. ios_webkit_debug_proxy
+    - `ios_webkit_debug_proxy -f chrome-devtools://devtools/bundled/inspector.html`
+    - `-f` 参数直接指定使用chrome的devtools作前端
+3. 在ios设备上，打开safari，访问一个网页 https://xxx.com
+4. 在Mac上用Chrome访问 `localhost:9221`, 点击 `localhost:9222`
+5. 右击 https://xxx.com 并复制连接地址，粘贴到地址栏访问
+6. 此时便可以用chrome的dev tool来调试webView
+
+推荐使用 [RemoteDebug/remotedebug-ios-webkit-adapter](https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter)
+
+使用 remotedebug-ios-webkit-adapter 后就不用再手动开启 ios-webkit-debug-proxy 了会自动运行的。
+
+直接 chrome 打开 [chrome://inspect/#devices](chrome://inspect/#devices)
 
 ```bash
 npm install remotedebug-ios-webkit-adapter -g
 ```
 
-TODO: 暂未调通
+TODO: 按照以下步骤，有一次整个流程是通了，但是最终打开的调试界面并没有关联上链接，所以并未调通，另外后来运行第 2 步后，访问 `localhost:9221`，并未出现 `localhost:9222`，这个奇怪，不知道什么引起的，调试界面都没得看了
 
-1. ios safari 设置： 设置 -> Safari浏览器 -> 高级 -> Web Inspector
-2. ios_webkit_debug_proxy
-    `ios_webkit_debug_proxy -f chrome-devtools://devtools/bundled/inspector.html`
-3. 在ios设备上，打开safari，访问一个网页 https://xxx.com
-4. 在Mac上用Chrome访问 `localhost:9221`, 点击 `localhost:9222`
-5. 右击 https://xxx.com 并复制连接地址，粘贴到地址栏访问
-6. 此时便可以用chrome的dev tool来调试webView
+可能是 iOS version over 12.3.0（目前没定位到问题）
 
 参考：
 
 - https://www.cnblogs.com/imwtr/p/8675701.html
 - https://www.cnblogs.com/dreamhighqiu/p/10995970.html
 - https://blog.csdn.net/whackw/article/details/45207551
+- https://github.com/gs3170981/chrome_ios_safari_ios-webkit-debug-proxy
+- 目前已知问题+解决方案汇总 https://github.com/alibaba/macaca/issues/929
+- https://github.com/alibaba/macaca/issues/42

@@ -6,7 +6,7 @@
   - [ ] chrome
   - [ ] firefox
   - [ ] safari
-  - [x] [iOS devices debug](./packages/ios/readme.md)
+  - [ ] [iOS devices debug](./packages/ios/readme.md)
   - [ ] Chrome remote debug
 - [nodejs](./packages/nodejs/readme.md)
   - [x] nodejs 脚本
