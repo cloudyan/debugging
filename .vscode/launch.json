@@ -57,5 +57,13 @@
         "${workspaceFolder}/packages/jest/_tests__/SyncHook.js"
       ],
     },
+    {
+      "name": "iOS Web",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9000,
+      "url": "http://localhost:8080/*",
+      "webRoot": "${workspaceRoot}/packages/ios/examples"
+    }
   ]
 }

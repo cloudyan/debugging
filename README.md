@@ -6,17 +6,19 @@
   - [ ] chrome
   - [ ] firefox
   - [ ] safari
-- nodejs
+  - [x] [iOS devices debug](./packages/ios/readme.md)
+  - [ ] Chrome remote debug
+- [nodejs](./packages/nodejs/readme.md)
   - [x] nodejs 脚本
   - [x] express/koa
-  - [ ] typescript
   - [x] webpack plugin
   - [ ] babel plugin
   - [ ] vue-cli plugin
-- [x] jest
+- [ ] typescript
+- [x] [jest](./packages/jest/readme.md)
 - [ ] vue
 - [ ] react
-- [x] c/cpp
+- [x] [c/cpp](./packages/cpp/readme.md)
 
 参考：
 
