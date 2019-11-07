@@ -65,6 +65,7 @@ ipch
 temp*
 *.out*
 dist
+package-lock.json
 
 # temp
 temp

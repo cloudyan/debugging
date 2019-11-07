@@ -22,6 +22,7 @@ module.exports = {
     'import',
     'prettier',
   ],
+  // plugins: ['prettier'],
 
   // https://cn.eslint.org/docs/4.0.0/rules/
   // 根据需要修改 rules，详见 http://eslint.org/docs/rules/

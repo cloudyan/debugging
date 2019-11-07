@@ -2,6 +2,8 @@
 
 这里收集总结各种调试的手段
 
+## 各种调试
+
 - browser 浏览器
   - [ ] chrome
   - [ ] firefox
@@ -19,6 +21,19 @@
 - [ ] vue
 - [ ] react
 - [x] [c/cpp](./packages/cpp/readme.md)
+
+## 使用
+
+```bash
+lerna bootstrap
+
+# 全局安装
+npm i -g @babel/core @babel/cli @babel/node @babel/preset-env
+# 然后可以运行
+npx babel-node
+```
+
+https://babeljs.io/docs/en/babel-node
 
 参考：
 
