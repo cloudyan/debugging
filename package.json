@@ -1,9 +1,6 @@
 {
   "name": "@deepjs/debugging",
   "private": true,
-  "workspaces": [
-    "packages/**/*"
-  ],
   "version": "1.0.0",
   "description": "这里收集总结各种调试手段",
   "main": "dist/index.js",
@@ -31,11 +28,8 @@
     "url": "https://github.com/deepjs-net/debugging/issues"
   },
   "homepage": "https://github.com/deepjs-net/debugging#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
     "@babel/node": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
     "babel-eslint": "^10.0.3",
