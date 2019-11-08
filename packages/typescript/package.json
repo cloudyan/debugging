@@ -4,7 +4,7 @@
   "description": "ts-debugging",
   "main": "lib/index.js",
   "scripts": {
-    "dev:ts": "./node_modules/.bin/tsc",
+    "dev": "./node_modules/.bin/tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

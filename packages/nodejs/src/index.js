@@ -1,6 +1,6 @@
-// import * from './utils'
 
-import { hello, Person } from './utils'
+// import { hello, Person } from './es5'
+import { hello, Person } from './es6'
 
 hello('world')
 
