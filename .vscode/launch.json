@@ -21,7 +21,8 @@
       "name": "nodejs: es6",
       // npx babel-node --presets=@babel/preset-env
       "program": "${workspaceFolder}/packages/nodejs/src/index.js",
-      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node",
+      // 或者使用全局安装的 babel-node `npm i -g @babel/node @babel/core @babel/preset-env`
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node", // 改用 babel-node 执行, 而不是 node
       "skipFiles": [
         "<node_internals>/**"
       ]
