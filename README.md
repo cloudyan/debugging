@@ -4,14 +4,21 @@
 
 ## 各种调试
 
-- browser 浏览器
+nodejs 调试, 下面两种方式都可以
+
+1. 使用 `node --inspect-brk` 进行调试, 通过 `chrome://inspect` 打开 devtools 调试
+2. 使用 [vscode](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) 内置调试支持, 直接断点调试(推荐)
+
+- browser 浏览器(常规调试)
   - [ ] chrome
   - [ ] firefox
   - [ ] safari
   - [ ] [iOS devices debug](./packages/ios/readme.md)
   - [ ] Chrome remote debug
 - [nodejs](./packages/nodejs/readme.md)
-  - [x] nodejs 脚本
+  - [x] [nodejs](./packages/nodejs) 脚本
+    - [x] 调试 es5
+    - [x] 调试 es6, 也可以配到 vscode 全局配置中
   - [x] express/koa
   - [x] webpack plugin
   - [ ] babel plugin
@@ -20,18 +27,16 @@
 - [x] [jest](./packages/jest/readme.md)
 - [ ] vue
 - [ ] react
-- [x] [c/cpp](./packages/cpp/readme.md)
-- vscode
-  - [x] 调试 es5
-  - [x] 调试 es6, 也可以配到 vscode 全局配置中
+- [x] 调试 [c/cpp](./packages/cpp/readme.md)
 
 ## 使用
 
 ```bash
-lerna bootstrap
+npm i
 
 # 全局安装
-npm i -g @babel/core @babel/cli @babel/node @babel/preset-env
+npm i -g @babel/core @babel/node @babel/preset-env
+
 # 然后可以运行
 npx babel-node
 ```
@@ -39,7 +44,7 @@ npx babel-node
 https://babeljs.io/docs/en/babel-node
 
 
-## vscode 全局配置调试
+## vscode 配置全局调试
 
 `cmd + ,` 打开 setting 配置, 写入以下内容
 
