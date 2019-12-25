@@ -2,6 +2,11 @@
 
 这里收集总结各种调试的手段
 
+## 常见问题汇总
+
+- 想调试 nodejs, 怎么处理? 参看 [nodejs](./packages/nodejs/readme.md) 方法通用
+- 碰到了 npm 模块, 但感觉有异常想跟踪调试, 怎么办? 本质仍然是 nodejs, 有可能会有新的参数需要配置, 如 jest
+
 ## 各种调试
 
 nodejs 调试, 下面两种方式都可以
@@ -16,10 +21,10 @@ nodejs 调试, 下面两种方式都可以
   - [ ] [iOS devices debug](./packages/ios/readme.md)
   - [ ] Chrome remote debug
 - [nodejs](./packages/nodejs/readme.md) 方法通用
-  - [nodejs](./packages/nodejs/readme.md) 小脚本
+  - [nodejs](./packages/nodejs/readme.md) 脚本
     - [x] 调试 es5
     - [x] 调试 es6, 也可以配到 vscode 全局配置中
-    - [x] npm 模块 gh-pages
+  - [x] npm 模块(本质还是 nodejs 脚本), 如 gh-pages
   - [x] express/koa
   - [x] webpack plugin
   - [ ] babel plugin
