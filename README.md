@@ -9,16 +9,17 @@ nodejs 调试, 下面两种方式都可以
 1. 使用 `node --inspect-brk` 进行调试, 通过 `chrome://inspect` 打开 devtools 调试
 2. 使用 [vscode](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) 内置调试支持, 直接断点调试(推荐)
 
-- browser 浏览器(常规调试)
+- browser 浏览器(常规调试, 大家都会)
   - [ ] chrome
   - [ ] firefox
   - [ ] safari
   - [ ] [iOS devices debug](./packages/ios/readme.md)
   - [ ] Chrome remote debug
-- [nodejs](./packages/nodejs/readme.md)
-  - [nodejs](./packages/nodejs) 小脚本
+- [nodejs](./packages/nodejs/readme.md) 方法通用
+  - [nodejs](./packages/nodejs/readme.md) 小脚本
     - [x] 调试 es5
     - [x] 调试 es6, 也可以配到 vscode 全局配置中
+    - [x] npm 模块 gh-pages
   - [x] express/koa
   - [x] webpack plugin
   - [ ] babel plugin
