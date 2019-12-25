@@ -4,8 +4,16 @@
 
 ## 常见问题汇总
 
-- 想调试 nodejs, 怎么处理? 参看 [nodejs](./packages/nodejs/readme.md) 方法通用
-- 碰到了 npm 模块, 但感觉有异常想跟踪调试, 怎么办? 本质仍然是 nodejs, 有可能会有新的参数需要配置, 如 jest
+- 想调试 nodejs, 怎么处理?
+  - 参看 [nodejs](./packages/nodejs/readme.md) 方法通用
+- 碰到了 npm 模块, 但感觉有异常想跟踪调试, 怎么办?
+  - 本质仍然是 nodejs, 有可能会有新的参数需要配置, 如 jest
+- 想跟踪 webpack 打包流程, 怎么调试?
+- 想单独测试一个 vue 文件, 怎么快捷?
+- 如何使用 vscode 配置调试 vue, nodejs 等?
+- 怎么调试 npm scripts 命令?
+- 怎么配置调试 typescript?
+- 常规浏览器调试技巧?
 
 ## 各种调试
 
