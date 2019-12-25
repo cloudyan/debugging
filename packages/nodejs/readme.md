@@ -12,6 +12,8 @@
 
 ## 使用 `--inspect` 调试
 
+直接使用 `node --inspect` 或 `node --inspect-brk` 运行脚本, chrome 打开 `chrome://inspect` 调试即可
+
 TIP 注意
 
 - 在根目录 debugging/ 调试，需要 `debugging/babel.config.js` 配置文件
@@ -27,4 +29,48 @@ TIP 注意
 
 以上方法针对 express 和 koa 也是可行的，脚本运行起来并不会退出，可以打开 `chrome://inspect` 打开调试界面, 然后访问服务
 
-## 使用 vscode 调试
+## 使用 vscode 调试 nodejs
+
+修改
+
+```js
+// 调试 es5 脚本
+{
+  "type": "node",
+  "request": "launch",
+  "name": "nodejs: es5",
+  "program": "${workspaceFolder}/packages/nodejs/src/es5.js",
+  "skipFiles": [
+    "<node_internals>/**"
+  ]
+},
+// 调试 es6 脚本
+{
+  "type": "node",
+  "request": "launch",
+  "name": "nodejs: es6",
+  // npx babel-node --presets=@babel/preset-env
+  "program": "${workspaceFolder}/packages/nodejs/src/index.js",
+  // 或者使用全局安装的 babel-node `npm i -g @babel/node @babel/core @babel/preset-env`
+  "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node", // 改用 babel-node 执行, 而不是 node
+  "skipFiles": [
+    "<node_internals>/**"
+  ]
+},
+// 调试 npm script 命令
+// 执行 npm run debug
+{
+  "type": "node",
+  "request": "launch",
+  "name": "npm script: debug",
+  "runtimeExecutable": "npm",
+  "runtimeArgs": [
+    "run-script",
+    "debug"
+  ],
+  "port": 9229,
+  "skipFiles": [
+    "<node_internals>/**"
+  ]
+},
+```
