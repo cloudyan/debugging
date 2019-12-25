@@ -16,7 +16,7 @@ nodejs 调试, 下面两种方式都可以
   - [ ] [iOS devices debug](./packages/ios/readme.md)
   - [ ] Chrome remote debug
 - [nodejs](./packages/nodejs/readme.md)
-  - [x] [nodejs](./packages/nodejs) 脚本
+  - [nodejs](./packages/nodejs) 小脚本
     - [x] 调试 es5
     - [x] 调试 es6, 也可以配到 vscode 全局配置中
   - [x] express/koa

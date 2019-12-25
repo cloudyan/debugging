@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
 
-
+    // 调试 es5 脚本
     {
       "type": "node",
       "request": "launch",
@@ -15,6 +15,7 @@
         "<node_internals>/**"
       ]
     },
+    // 调试 es6 脚本
     {
       "type": "node",
       "request": "launch",
@@ -27,6 +28,7 @@
         "<node_internals>/**"
       ]
     },
+    // 调试 npm script 命令
     // 执行 npm run debug
     {
       "type": "node",
@@ -42,6 +44,8 @@
         "<node_internals>/**"
       ]
     },
+
+    // 默认
     {
       "type": "node",
       "request": "attach",
@@ -51,6 +55,8 @@
         "<node_internals>/**"
       ]
     },
+
+    // 调试 cpp
     {
       "name": "cpp: (lldb) Launch",
       "type": "cppdbg",
@@ -81,6 +87,8 @@
     //   ],
     //   "port": 9229
     // },
+
+    // 调试 webpack 插件
     {
       "type": "node",
       "request": "launch",
@@ -95,6 +103,8 @@
       "env" : { "NODE_ENV" : "production" },
       // "envFile": "${workspaceFolder}/xxx.env",
     },
+
+    // 调试 jest
     {
       "type": "node",
       "request": "launch",
@@ -104,6 +114,8 @@
         "${workspaceFolder}/packages/jest/_tests__/SyncHook.js"
       ],
     },
+
+    // 调试 iOS Web (未生效)
     {
       "name": "iOS Web",
       "type": "chrome",

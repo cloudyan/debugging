@@ -10,6 +10,7 @@
     "express:serve": "node express/server.js",
     "koa:dev": "npx babel-node --inspect koa/server.js",
     "koa:serve": "node koa/server.js",
+    "deploy": "node --inspect-brk ./node_modules/.bin/gh-pages -t -d ./gh-pages/dist -r git@github.com:webcoding/webtest.git --message $(git symbolic-ref --short -q HEAD)-$(git rev-parse --short HEAD)",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "@babel/core": "^7.7.2",
     "@babel/node": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
+    "gh-pages": "^2.1.1",
     "lerna": "^3.18.3"
   }
 }
