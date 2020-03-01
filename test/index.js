@@ -8,4 +8,4 @@
 // import './url-parse'
 // import './ifelse-pk-switch'
 
-import './cache';
+import './cache'

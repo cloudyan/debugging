@@ -1,5 +1,5 @@
 
-import urlParse from 'url-parse';
+import urlParse from 'url-parse'
 
 const log = (obj) => {
   console.log(JSON.stringify(filter(obj)))
