@@ -6,6 +6,8 @@
 - express, koa
 - es6
 
+其他
+
 1. 使用 `--inspect`
     - `npx babel-node --inspect ./src/index.js`
 2. 可以使用 vscode 调试
@@ -31,7 +33,7 @@ TIP 注意
 
 ## 使用 vscode 调试 nodejs
 
-修改
+1. 修改配置vscode
 
 ```js
 // 调试 es5 脚本
@@ -74,3 +76,51 @@ TIP 注意
   ]
 },
 ```
+
+或 `cmd + ,` 修改全局配置
+
+```
+"launch": {
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "es6: debug",
+      // workspaceFolder 当前工作路径：当前文件所在的工作空间
+      // 或者使用全局安装的 babel-node `npm i -g @babel/node @babel/core @babel/preset-env`
+      "program": "${workspaceFolder}/test.js",
+      // 改用 babel-node 执行, 而不是 node
+      "runtimeExecutable": "babel-node",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ]
+},
+```
+
+2. 安装依赖
+
+`npm i @babel/preset-env @babel/core --save-dev`
+
+3. 配置 babel
+
+项目根目录配置 `babel.config.js`
+
+```js
+module.exports = {
+  'presets': [
+    [
+      '@babel/preset-env',
+      {
+        'targets': {
+          node: 'current',
+          esmodules: true,
+        }
+      }
+    ]
+  ]
+}
+```
+
+此时你就可以修改路径，比如调试根目下的 test.js 文件(可 import es6 文件)

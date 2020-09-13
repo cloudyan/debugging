@@ -2,6 +2,19 @@
 
 这里收集总结各种调试的手段
 
+## 常见问题汇总
+
+- 想调试 nodejs, 怎么处理?
+  - 参看 [nodejs](./packages/nodejs/readme.md) 方法通用
+- 碰到了 npm 模块, 但感觉有异常想跟踪调试, 怎么办?
+  - 本质仍然是 nodejs, 有可能会有新的参数需要配置, 如 jest
+- 想跟踪 webpack 打包流程, 怎么调试?
+- 想单独测试一个 vue 文件, 怎么快捷?
+- 如何使用 vscode 配置调试 vue, nodejs 等?
+- 怎么调试 npm scripts 命令?
+- 怎么配置调试 typescript?
+- 常规浏览器调试技巧?
+
 ## 各种调试
 
 nodejs 调试, 下面两种方式都可以
@@ -9,16 +22,17 @@ nodejs 调试, 下面两种方式都可以
 1. 使用 `node --inspect-brk` 进行调试, 通过 `chrome://inspect` 打开 devtools 调试
 2. 使用 [vscode](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) 内置调试支持, 直接断点调试(推荐)
 
-- browser 浏览器(常规调试)
+- browser 浏览器(常规调试, 大家都会)
   - [ ] chrome
   - [ ] firefox
   - [ ] safari
   - [ ] [iOS devices debug](./packages/ios/readme.md)
   - [ ] Chrome remote debug
-- [nodejs](./packages/nodejs/readme.md)
-  - [nodejs](./packages/nodejs) 小脚本
+- [nodejs](./packages/nodejs/readme.md) 方法通用
+  - [nodejs](./packages/nodejs/readme.md) 脚本
     - [x] 调试 es5
     - [x] 调试 es6, 也可以配到 vscode 全局配置中
+  - [x] npm 模块(本质还是 nodejs 脚本), 如 gh-pages
   - [x] express/koa
   - [x] webpack plugin
   - [ ] babel plugin
