@@ -32,7 +32,7 @@ nodejs 调试, 下面两种方式都可以
   - [nodejs](./packages/nodejs/readme.md) 脚本
     - [x] 调试 es5
     - [x] 调试 es6, 也可以配到 vscode 全局配置中
-  - [x] npm 模块(本质还是 nodejs 脚本), 如 gh-pages
+  - [x] **npm 模块** (本质还是 nodejs 脚本), 如 gh-pages
   - [x] express/koa
   - [x] webpack plugin
   - [ ] babel plugin

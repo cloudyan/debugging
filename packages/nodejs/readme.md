@@ -46,6 +46,7 @@ TIP 注意
     "<node_internals>/**"
   ]
 },
+
 // 调试 es6 脚本
 {
   "type": "node",
@@ -59,6 +60,7 @@ TIP 注意
     "<node_internals>/**"
   ]
 },
+
 // 调试 npm script 命令
 // 执行 npm run debug
 {
@@ -79,7 +81,7 @@ TIP 注意
 
 或 `cmd + ,` 修改全局配置
 
-```
+```js
 "launch": {
   "configurations": [
     {
