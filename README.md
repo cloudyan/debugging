@@ -27,7 +27,11 @@ nodejs 调试, 下面两种方式都可以
   - [ ] firefox
   - [ ] safari
   - [ ] [iOS devices debug](./packages/ios/readme.md)
+    - 使用 Safari：iphone 调试利器，查错改样式首选。
+    - 使用 iOS 模拟器：不需要真机，适合调试 Webview 和 H5 有频繁交互的功能页面。
   - [ ] Chrome remote debug
+- spy-debugger：移动端调试的利器，便捷的远程调试手机页面、抓包工具。
+- whistle：基于 Node 实现的跨平台 Web 调试代理工具。
 - [nodejs](./packages/nodejs/readme.md) 方法通用
   - [nodejs](./packages/nodejs/readme.md) 脚本
     - [x] 调试 es5
@@ -42,6 +46,10 @@ nodejs 调试, 下面两种方式都可以
 - [ ] vue
 - [ ] react
 - [x] 调试 [c/cpp](./packages/cpp/readme.md)
+- 使用代理调试 [Mac]Charles [Windows]Fiddler
+  - 可以重定向远程域名或资源到本机
+  - 可以重定向本地资源到远端
+  - 我们可以用本地文件来替换线上文件，方便调试，远程定位线上问题。
 
 ## 使用
 
@@ -93,3 +101,4 @@ https://babeljs.io/docs/en/babel-node
 - https://github.com/Microsoft/vscode-recipes
 - https://github.com/katopz/vscode-debug-nodejs-es6
 - https://juejin.im/post/5c6b6defe51d45798b51e4b2
+- https://mp.weixin.qq.com/s/IBXXJ8_Q_NzSWnzy04cKxw

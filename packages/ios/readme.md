@@ -1,5 +1,21 @@
 # iOS devices debug
 
+## 使用 safari
+
+Safari：iphone 调试利器，查错改样式首选
+
+- 浏览器设置：Safari - 偏好设置 - 高级 - 勾选「在菜单栏中显示开发」菜单
+- iphone 设置：设置 - Safari - 高级 - 打开 Web 检查器
+- 数据线连接
+
+这时候通过手机的 Safari 来打开 H5 页面，我们通过浏览器开发选项可以看到对应的端设备及对应页面链接
+
+还可以使用 **iOS 模拟器**
+
+不需要真机，适合调试 Webview 和 H5 有频繁交互的功能页面。
+
+### 问题
+
 今天同事使用 mac Safari 连接 iPhone 6 调试网页时
 
 Mac 上 safari -> 开发菜单列表， iOS 设备会短暂连接 1 秒，然后就会消失。最新版系统 iPhone 6（iOS 12.3.1） Mac（mac OS Mojave 10.14.6)

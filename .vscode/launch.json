@@ -32,8 +32,8 @@
     // 执行 npm run debug
     {
       "type": "node",
-      "request": "launch",
       "name": "npm script: debug",
+      "request": "launch",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "run-script",
@@ -42,7 +42,8 @@
       "port": 9229,
       "skipFiles": [
         "<node_internals>/**"
-      ]
+      ],
+      "cwd": "${workspaceFolder}" // 指定程序启动调试的目录
     },
 
     // 默认
