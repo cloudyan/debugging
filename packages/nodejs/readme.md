@@ -18,9 +18,9 @@
 
 TIP 注意
 
-- 在根目录 debugging/ 调试，需要 `debugging/babel.config.js` 配置文件
+- 在根目录 debugging/ 调试，需要配置 `debugging/babel.config.js` 文件
   - `npm run dev1`
-- 在当前目录 nodejs/ 调试，需要 `nodejs/.babelrc.js` 配置文件
+- 在当前目录 nodejs/ 调试，需要配置 `nodejs/.babelrc.js` 文件
   - `npm run dev`
 
 如果是纯执行脚本，使用 `--inspect` 一旦执行，就会执行完退出，没触发时机打断点
