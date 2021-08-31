@@ -54,8 +54,8 @@ vscode 编译 cpp 文件，需要配置以下内容，之后执行 编译即可
       "args": [
           "-g", // 调试程序必须设置的参数
           "-o", // 输出名称，不进行编译优化
-          "./packages/cpp/a.out",
-          "./packages/cpp/main.cpp" // 编译文件
+          "./cpp/a.out",
+          "./cpp/main.cpp" // 编译文件
       ],
       // 所以以上部分，就是在shell中执行
       "group": {

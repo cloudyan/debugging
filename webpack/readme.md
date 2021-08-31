@@ -26,7 +26,7 @@
       "args": [
         // 默认为 `./webpack.config.js`
         // "--host", "0.0.0.0",
-        "--config", "./packages/webpack/build/webpack.config.js"
+        "--config", "./webpack/build/webpack.config.js"
       ],
       "env" : { "NODE_ENV" : "production" },
       // "envFile": "${workspaceFolder}/xxx.env",

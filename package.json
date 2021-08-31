@@ -5,8 +5,8 @@
   "description": "这里收集总结各种调试手段",
   "main": "dist/index.js",
   "scripts": {
-    "dev1": "npx babel-node --inspect ./packages/nodejs/src/index.js",
-    "debug": "npx babel-node --inspect ./packages/nodejs/src/index.js",
+    "dev1": "npx babel-node --inspect ./nodejs/src/index.js",
+    "debug": "npx babel-node --inspect ./nodejs/src/index.js",
     "lint": "eslint './src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
