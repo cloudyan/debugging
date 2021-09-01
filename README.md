@@ -14,6 +14,7 @@
 - 怎么调试 npm scripts 命令?
 - 怎么配置调试 typescript?
 - 常规浏览器调试技巧?
+- [JavaScript反调试技巧](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651228450&idx=1&sn=ed4c0323bddaf3ad91c8a8e429bccf6e)
 
 ## 各种调试
 
@@ -27,11 +28,13 @@ nodejs 调试, 下面两种方式都可以
   - [ ] firefox
   - [ ] safari
   - [ ] [iOS devices debug](./ios/readme.md)
-    - 使用 Safari：iphone 调试利器，查错改样式首选。
-    - 使用 iOS 模拟器：不需要真机，适合调试 Webview 和 H5 有频繁交互的功能页面。
+    - 使用 Safari: iphone 调试利器，查错改样式首选。
+    - 使用 iOS 模拟器: 不需要真机，适合调试 Webview 和 H5 有频繁交互的功能页面。
   - [ ] Chrome remote debug
-- spy-debugger：移动端调试的利器，便捷的远程调试手机页面、抓包工具。
-- whistle：基于 Node 实现的跨平台 Web 调试代理工具。
+- spy-debugger: 移动端调试的利器，便捷的远程调试手机页面、抓包工具。
+- whistle: 基于 Node 实现的跨平台 Web 调试代理工具。
+- [nohost](https://nohost.pro/): 基于 Whistle 实现的多账号多环境远程配置及抓包调试平台
+- weinre: 全称是网页远程审查（Web Inspector Remote），发音同winery [ˈwaɪn(ə)ri]。可以在PC上调试运行在移动端上的页面。[weinre](https://segmentfault.com/a/1190000010017457) 不能调试 js
 - [nodejs](./nodejs/readme.md) 方法通用
   - [nodejs](./nodejs/readme.md) 脚本
     - [x] 调试 es5
@@ -83,7 +86,7 @@ https://babeljs.io/docs/en/babel-node
         "type": "node",
         "request": "launch",
         "name": "es6: debug",
-        "program": "${workspaceFolder}/test.js", // workspaceFolder 当前工作路径：当前文件所在的工作空间
+        "program": "${workspaceFolder}/test.js", // workspaceFolder 当前工作路径: 当前文件所在的工作空间
         // 或者使用全局安装的 babel-node `npm i -g @babel/node @babel/core @babel/preset-env`
         "runtimeExecutable": "babel-node", // 改用 babel-node 执行, 而不是 node
         "skipFiles": [
