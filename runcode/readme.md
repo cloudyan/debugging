@@ -22,7 +22,8 @@ module.exports = {
       {
         'targets': {
           node: 'current',
-          esmodules: true,
+          modules: false, // 关于这个 云谦有篇介绍应该永久为 false
+          // @babel/presets-env会自动将ES6 Module转化为CommonJS形式，会导致Webpack中的tree-shaking特性失效，而将modules配置为false后会禁用模块化语句的转化，将Module的语法交给Webpack本身去处理，来避免这一问题的发生。
         }
       }
     ]
@@ -37,12 +38,13 @@ module.exports = {
 // npm i -g @babel/cli @babel/node @babel/preset-env
 // Error: Cannot find module '@babel/preset-env' from '/usr/local/lib' 报此错误需要改为当前项目为根目录再执行右键Run Code 或配置 `"code-runner.cwd": "/usr/local/lib/",`
 {
-  "code-runner.defaultLanguage": "javascript",
   "code-runner.cwd": "/usr/local/lib/",
+  "code-runner.defaultLanguage": "javascript",
   "code-runner.executorMap": {
     "vue": "babel-node",
     // babel 7
-    "javascript": "npx babel-node --presets @babel/preset-env"
+    // 需要全局安装 npm i -g @babel/core @babel/node
+    "javascript": "npx babel-node --config-file=~/babel.config.js --presets=@babel/preset-env"
   }
 }
 ```

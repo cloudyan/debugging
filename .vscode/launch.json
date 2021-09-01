@@ -10,7 +10,7 @@
       "type": "node",
       "request": "launch",
       "name": "nodejs: es5",
-      "program": "${workspaceFolder}/packages/nodejs/src/es5.js",
+      "program": "${workspaceFolder}/nodejs/src/es5.js",
       "skipFiles": [
         "<node_internals>/**"
       ]
@@ -21,7 +21,7 @@
       "request": "launch",
       "name": "nodejs: es6",
       // npx babel-node --presets=@babel/preset-env
-      "program": "${workspaceFolder}/packages/nodejs/src/index.js",
+      "program": "${workspaceFolder}/nodejs/src/index.js",
       // 或者使用全局安装的 babel-node `npm i -g @babel/node @babel/core @babel/preset-env`
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node", // 改用 babel-node 执行, 而不是 node
       "skipFiles": [
@@ -63,7 +63,7 @@
       "type": "cppdbg",
       "request": "launch",
       "preLaunchTask": "cpp:build", // 在launch之前运行的任务名，这个名字一定要跟tasks.json中的任务名字大小写一致
-      "program": "${workspaceFolder}/packages/cpp/a.out", // 需要运行的是当前打开文件的目录中，名字和当前编译输出文件相同
+      "program": "${workspaceFolder}/cpp/a.out", // 需要运行的是当前打开文件的目录中，名字和当前编译输出文件相同
       "args": [],
       "stopAtEntry": false, // 选为true则会在打开控制台后停滞，暂时不执行程序
       "cwd": "${workspaceFolder}", // 当前工作路径：当前文件所在的工作空间
@@ -112,7 +112,7 @@
       "name": "jest:test",
       "program": "${workspaceFolder}/node_modules/.bin/jest",
       "args": [
-        "${workspaceFolder}/packages/jest/_tests__/SyncHook.js"
+        "${workspaceFolder}/jest/_tests__/SyncHook.js"
       ],
     },
 
@@ -123,7 +123,7 @@
       "request": "attach",
       "port": 9000,
       "url": "http://localhost:8080/*",
-      "webRoot": "${workspaceRoot}/packages/ios/examples"
+      "webRoot": "${workspaceRoot}/ios/examples"
     }
   ]
 }
