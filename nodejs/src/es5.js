@@ -16,7 +16,7 @@ console.log('path.normalize', path.normalize(__dirname)) // src
 
 // path.join([path1][, path2][, ...])
 // 用于连接路径。该方法的主要用途在于，会正确使用当前系统的路径分隔符，Unix系统是"/"，Windows系统是"\"。
-console.log('path.join', path.join(__dirname, '../../')) // debugging/packages
+console.log('path.join', path.join(__dirname, '../../')) // debugging
 
 
 // path.resolve([from ...], to)

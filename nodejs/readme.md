@@ -41,7 +41,7 @@ TIP 注意
   "type": "node",
   "request": "launch",
   "name": "nodejs: es5",
-  "program": "${workspaceFolder}/packages/nodejs/src/es5.js",
+  "program": "${workspaceFolder}/nodejs/src/es5.js",
   "skipFiles": [
     "<node_internals>/**"
   ]
@@ -53,7 +53,7 @@ TIP 注意
   "request": "launch",
   "name": "nodejs: es6",
   // npx babel-node --presets=@babel/preset-env
-  "program": "${workspaceFolder}/packages/nodejs/src/index.js",
+  "program": "${workspaceFolder}/nodejs/src/index.js",
   // 或者使用全局安装的 babel-node `npm i -g @babel/node @babel/core @babel/preset-env`
   "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node", // 改用 babel-node 执行, 而不是 node
   "skipFiles": [

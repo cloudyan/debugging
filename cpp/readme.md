@@ -26,7 +26,7 @@ vscode 编译 cpp 文件，需要配置以下内容，之后执行 编译即可
       "type": "cppdbg",
       "request": "launch",
       "preLaunchTask": "cpp:build", // 在launch之前运行的任务名，这个名字一定要跟tasks.json中的任务名字大小写一致
-      "program": "${workspaceFolder}/packages/cpp/a.out", // 需要运行的是当前打开文件的目录中，名字和当前编译输出文件相同
+      "program": "${workspaceFolder}/cpp/a.out", // 需要运行的是当前打开文件的目录中，名字和当前编译输出文件相同
       "args": [],
       "stopAtEntry": false, // 选为true则会在打开控制台后停滞，暂时不执行程序
       "cwd": "${workspaceFolder}", // 当前工作路径：当前文件所在的工作空间
