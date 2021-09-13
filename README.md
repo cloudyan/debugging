@@ -28,9 +28,11 @@ nodejs 调试, 下面两种方式都可以
   - [ ] firefox
   - [ ] safari
   - [ ] [iOS devices debug](./ios/readme.md)
-    - 使用 Safari: iphone 调试利器，查错改样式首选。
+    - 使用 Safari: iphone 真机调试利器，查错改样式首选。
     - 使用 iOS 模拟器: 不需要真机，适合调试 Webview 和 H5 有频繁交互的功能页面。
   - [ ] Chrome remote debug
+    - 适用 Android，开发者选项，勾选USB 调试
+    - Chrome 中输入: `chrome://inspect`，进入调试页面
 - spy-debugger: 移动端调试的利器，便捷的远程调试手机页面、抓包工具。
 - whistle: 基于 Node 实现的跨平台 Web 调试代理工具。
 - [nohost](https://nohost.pro/): 基于 Whistle 实现的多账号多环境远程配置及抓包调试平台
