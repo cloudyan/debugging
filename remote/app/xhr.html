@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测试 XHR 相关错误</title>
+</head>
+<body>
+  <script src="./xhr.js"></script>
+  <script>
+    ;(function () {
+      function getUrlParam(name) {
+        const reg = new RegExp('(^|&)'+name+'=([^&]*)(&|$)')
+        const arr = location.search.substr(1).match(reg) || []
+        return typeof arr[2] === 'undefined' ? void 0 : decodeURIComponent(arr[2])
+      }
+
+      // 使用 code 控制服务端返回对应 http 状态码
+      const code = getUrlParam('code') || 200
+      const timeout = getUrlParam('timeout') || 200
+      ajax(`http://127.0.0.1:8888?code=${code}&timeout=${timeout}`, {
+        timeout: timeout,
+        success(res) {
+          console.log(res)
+        },
+        fail(xhr) {
+          console.log(xhr)
+          console.log(xhr.status, xhr.statusText, xhr.responseURL, xhr.responseText)
+          // xhr.responseText
+        }
+      })
+    })();
+  </script>
+</body>
+</html>
