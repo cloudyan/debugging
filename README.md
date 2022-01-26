@@ -52,7 +52,9 @@ nodejs 调试, 下面两种方式都可以
 - [ ] react 同 vue，也可以直接定位源码位置
 - [x] 调试 [c/cpp](./cpp/readme.md)
 - vscode 调试
-  - 这个现在调试很方便
+  - VSCode 调试 JS 的方法有很多，目前比较推荐的就是无需配置的 `auto-attach`。这里推荐阅读若川的博客 [nodejs 调试](https://github.com/lxchuan12/nodejs-debugging/blob/main/README.md)
+  - 按 `ctrl + shift + p`，打开输入 >`auto attach`。
+  - 官方文档 [nodejs-debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
 - 使用代理调试 [Mac]Charles [Windows]Fiddler
   - 可以重定向远程域名或资源到本机
   - 可以重定向本地资源到远端
@@ -79,7 +81,7 @@ https://babeljs.io/docs/en/babel-node
 
 ## vscode 配置全局调试
 
-有更新的调试方案，可以参考 https://github.com/microsoft/vscode-js-debug
+有更新的调试方案，可以参考 https://github.com/microsoft/vscode-js-debug 这里也有许多案例
 
 `cmd + ,` 打开 setting 配置, 写入以下内容
 
