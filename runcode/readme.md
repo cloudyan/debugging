@@ -73,8 +73,12 @@ module.exports = {
 - 使用 code run 需要配置 `code-runner.executorMap`
 - es5 以及 commonjs 语法没有问题
 - es6 模块
-  - 方案 1：需要使用文件后缀 `mjs`，`import` 时需要带文件后缀 `.mjs` 引用
-  - 方案 2：需要 `package.json` 配置 `"type": "modules",`, 可使用 `.js` 后缀， `import` 时同样需要带 `.js` 后缀引用
+  - 单文件没问题
+  - 多文件，使用 `import` 引用，需要如下处理
+    - 方案 1：需要使用文件后缀 `mjs`，`import` 时需要带文件后缀 `.mjs` 引用
+      - 参见 [mjs 示例](./mjs/index.mjs)
+    - 方案 2：需要 `package.json` 配置 `"type": "modules",`, 可使用 `.js` 后缀， `import` 时同样需要带 `.js` 后缀引用
+      - 参见 [es6-modules 示例](./es6-modules/index.js)
 
 ## 问题
 
