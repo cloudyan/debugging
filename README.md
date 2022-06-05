@@ -59,10 +59,12 @@ nodejs 调试, 下面两种方式都可以
   - 可以重定向远程域名或资源到本机
   - 可以重定向本地资源到远端
   - 我们可以用本地文件来替换线上文件，方便调试，远程定位线上问题。
-- 当前设备安装 HTTPS 证书
+- [当前设备安装 HTTPS 证书](https://www.yuque.com/cloudyan/faq/yxr48q)
   - iOS
   - Android
   - Mac
+- andriod
+  - [scrcpy](https://github.com/Genymobile/scrcpy/blob/master/README.zh-Hans.md)
 
 ## 使用
 
