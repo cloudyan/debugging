@@ -34,7 +34,7 @@ nodejs 调试, 下面两种方式都可以
     - 适用 Android，开发者选项，勾选USB 调试
     - Chrome 中输入: `chrome://inspect`，进入调试页面
 - spy-debugger: 移动端调试的利器，便捷的远程调试手机页面、抓包工具。
-- whistle: 基于 Node 实现的跨平台 Web 调试代理工具。
+- [whistle](https://wproxy.org/whistle/): 基于 Node 实现的跨平台 Web 调试代理工具。
 - [nohost](https://nohost.pro/): 基于 Whistle 实现的多账号多环境远程配置及抓包调试平台
 - weinre: 全称是网页远程审查（Web Inspector Remote），发音同winery [ˈwaɪn(ə)ri]。可以在PC上调试运行在移动端上的页面。[weinre](https://segmentfault.com/a/1190000010017457) 不能调试 js
 - [nodejs](./nodejs/readme.md) 方法通用
@@ -120,3 +120,5 @@ https://babeljs.io/docs/en/babel-node
 - https://github.com/katopz/vscode-debug-nodejs-es6
 - https://juejin.im/post/5c6b6defe51d45798b51e4b2
 - https://mp.weixin.qq.com/s/IBXXJ8_Q_NzSWnzy04cKxw
+- https://juejin.cn/post/6844903982888910861
+- [Awesome Chrome DevTools](https://github.com/ChromeDevTools/awesome-chrome-devtools#chrome-devtools-protocol)
