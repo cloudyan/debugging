@@ -6,6 +6,9 @@
 
 于是又要增强下调试手段了，Whistle 老早就听说过，但未做了解，目前觉得这个可以做到脚本动态解密响应内容，所以下面学习下。
 
+- [whistle github](https://github.com/avwo/whistle)
+  - [Mac client](https://github.com/avwo/whistle-client/releases)
+  - [Windows client](https://github.com/avwo/whistle-client/releases)
 - [whistle](https://wproxy.org/whistle/): 基于 Node 实现的跨平台 Web 调试代理工具。
 - 教程
   - Whistle 系列入门教程
@@ -80,6 +83,21 @@ origin: https://juejin.cn
 ```
 
 怎么通过脚本修改 body 响应体内容？
+
+### whistle.script
+
+```bash
+# whistle.script://test juejin.cn www.qq.com www.baidu.com echo.websocket.org
+
+# 这里不能用whistle.script，否则请求不会转发到handleRequest
+# whistle.script只会执行handleXxxRules
+# 你也可以通过在handleXxxRules里面设置 script://test(a,b,c)，实现转发
+script://test juejin.cn www.qq.com www.baidu.com echo.websocket.org
+```
+
+### 脚本
+
+参见 [script.js](./script.js)
 
 ## 插件开发
 

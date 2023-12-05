@@ -83,6 +83,9 @@ nodejs 调试, 下面两种方式都可以
     - Mac
     - iOS
     - Android
+- 浏览器插件
+  - [xswitch](https://github.com/yize/xswitch) 用来做请求链接转发
+  - [anyproxy](https://github.com/alibaba/anyproxy) 不再维护了
 - andriod
   - [scrcpy](https://github.com/Genymobile/scrcpy/blob/master/README.zh-Hans.md)
 - 内网穿透：在公网访问本地服务
