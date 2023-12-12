@@ -57,6 +57,11 @@ https://api.juejin.cn/recommend_api/v1/article/recommend_all_feed resScript://{r
 
 # 页面注入 vConsole
 https://juejin.cn/ whistle.inspect://vConsole
+
+
+# 跨域
+*.xxx.com/ resHeaders://{Allow-Origin.json}
+# Access-Control-Allow-Origin: *
 ```
 
 Values
@@ -86,18 +91,25 @@ origin: https://juejin.cn
 
 ### whistle.script
 
-```bash
-# whistle.script://test juejin.cn www.qq.com www.baidu.com echo.websocket.org
+handleRequestRules
 
-# 这里不能用whistle.script，否则请求不会转发到handleRequest
+```bash
+# 测试已生效
+whistle.script://test1 juejin.cn www.qq.com www.baidu.com echo.websocket.org
+```
+
+handleRequest
+
+```bash
+# 这里不能用 whistle.script，否则请求不会转发到 handleRequest
 # whistle.script只会执行handleXxxRules
-# 你也可以通过在handleXxxRules里面设置 script://test(a,b,c)，实现转发
-script://test juejin.cn www.qq.com www.baidu.com echo.websocket.org
+# 你也可以通过在 handleXxxRules 里面设置 script://test(a,b,c)，实现转发
+script://test2.js juejin.cn www.qq.com www.baidu.com echo.websocket.org
 ```
 
 ### 脚本
 
-参见 [script.js](./script.js)
+参见 [scripts](./scripts)
 
 ## 插件开发
 

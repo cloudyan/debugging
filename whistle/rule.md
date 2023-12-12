@@ -29,8 +29,6 @@ qq.ketang.com/  http://127.0.0.1:3000/ excludeFilter:///^\w+://qq\.ketang\.com/c
 
 # 详细 [Whistle规则的模式匹配](https://wproxy.org/whistle/pattern.html)
 
-
-
 # 示例 2
 # 以本地文件作为响应
 # qq.ketang.com/cgi-proxy/getMyName 以本地的//User/dug/test/getMyName.json文件作为响应,
