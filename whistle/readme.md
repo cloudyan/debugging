@@ -141,3 +141,9 @@ script://test2.js juejin.cn www.qq.com www.baidu.com echo.websocket.org
 - https://juejin.cn/post/7077385311642189832
   - jsPrepend 语法对某个页面注入 JS 脚本
 - [使用whistle开发插件修改请求参数和响应body](https://zhuanlan.zhihu.com/p/580964180)
+
+一般忽略这些主机与域的代理设置：
+
+```bash
+192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,127.0.0.1,localhost,*.local,timestamp.apple.com,sequoia.apple.com,seed-sequoia.siri.apple.com
+```
