@@ -175,3 +175,4 @@ weinre --boundHost=-all- --httpPort=1000 # 启动，boundHost为all是允许本�
 - https://mp.weixin.qq.com/s/IBXXJ8_Q_NzSWnzy04cKxw
 - https://juejin.cn/post/6844903982888910861
 - [Awesome Chrome DevTools](https://github.com/ChromeDevTools/awesome-chrome-devtools#chrome-devtools-protocol)
+- [揭秘浏览器远程调试技术](https://fed.taobao.org/blog/taofed/do71ct/chrome-remote-debugging-technics/)
