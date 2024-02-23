@@ -49,6 +49,8 @@ nodejs 调试, 下面两种方式都可以
 - spy-debugger: 移动端调试的利器，便捷的远程调试手机页面、抓包工具。
 - [whistle](https://wproxy.org/whistle/): 基于 Node 实现的跨平台 Web 调试代理工具。
 - [nohost](https://nohost.pro/): 基于 Whistle 实现的多账号多环境远程配置及抓包调试平台
+- [PageSpy](https://www.pagespy.org/): 检测运行时，远程操作！
+- [remotejs.com](https://remotejs.com/) Remote JavaScript Debugging
 - [weinre](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html): 全称是网页远程审查（Web Inspector Remote），发音同winery [ˈwaɪn(ə)ri]。可以在PC上调试运行在移动端上的页面。
   - 无线调试工具 [weinre](https://segmentfault.com/a/1190000010017457) 不能调试 js
   - 无需数据线，pc和移动都可以调试
